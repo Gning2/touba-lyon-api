@@ -1,0 +1,19 @@
+# config/packages/nelmio_api_doc.yaml
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Touba Lyon — API Logistique
+            description: |
+                API REST pour la gestion des bagages et matériels du dahira Touba Lyon.
+                Permet de gérer les catégories, matériels, emprunts et de suivre l'historique des mouvements de stock.
+            version: '1.0.0'
+            contact:
+                name: Gestionnaire Touba Lyon
+        servers:
+            - url: http://localhost:8080
+              description: Serveur local (XAMPP)
+        components:
+            securitySchemes: []
+    areas:
+        path_patterns:
+            - ^/api(?!/doc$)

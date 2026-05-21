@@ -1,0 +1,11 @@
+# À AJOUTER dans config/routes.yaml (ou créer ce fichier s'il n'existe pas)
+
+app.swagger_ui:
+    path: /api/doc
+    methods: GET
+    defaults: { _controller: nelmio_api_doc.controller.swagger_ui }
+
+app.swagger_json:
+    path: /api/doc.json
+    methods: GET
+    defaults: { _controller: nelmio_api_doc.controller.swagger }
